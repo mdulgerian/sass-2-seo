@@ -1,0 +1,821 @@
+*{
+    margin:0px 
+    padding 0px 
+    font-family 'Roboto', sans-serif  
+    box-sizing border-box 
+}
+
+nav.navbar.navbar-expand-lg.text-white {
+    position: fixed !important; 
+    width: 100%;
+    z-index: 6
+    background-color  #000;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:crimson   
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url  (
+"data image/svg+xml charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http //www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220, 20, 60, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") 
+}
+
+.custom-toggler.navbar-toggler hover{
+    border-color:rgb(220, 20, 60, 0.8) 
+}
+
+img.w-25 { 
+    align-items: center; 
+    width: 20vh !important 
+}
+.inicio { grid-area: inicio }
+.sobremi { grid-area: sobremi }
+.servicios { grid-area: servicios }
+.trabajos { grid-area: trabajos }
+.contacto { grid-area: contacto }
+.bannerHero { grid-area: bannerHero }
+
+.nav-link hover{
+    background:  rgb(224, 223, 223, 0.8) 
+    color: crimson !important!
+    font-weight: bold
+    transition  all 0.3s 
+    border-radius: 5px 
+}
+
+#carouselExampleCaptions{
+    padding-top:  80px
+}
+
+.carousel-control-prev-icon{
+    height: 5v !important 
+}
+
+.textoIzquierda { 
+    grid-area:  textoIzquierda 
+    margin-top:  50px 
+    margin-bottom  50px 
+    flex-wrap  wrap 
+    min-width 150px 
+    text-align  left 
+    margin-left  40px 
+}
+.imagenInicio { 
+    grid-area:  imagenInicio  
+    max-width  80vh 
+    height  auto 
+    flex-wrap  wrap 
+    padding  0 !important 
+    /* border  2px solid #000  */
+}
+
+.navigation{
+    /* display grid  */
+    display:  flex 
+    justify-content  space-between 
+    align-items flex-end 
+    float  right 
+    padding  30px 
+}
+.navigation ul {
+    margin:  0 
+    padding  0 
+    list-style  none 
+}
+
+.navigation ul li{
+    display:  inline-block;
+}
+
+.navigation ul li a{
+    display:  block; 
+    padding  0.5rem 1rem 
+    transition  all 0.4s linear 
+    color  white  
+    text-decoration  none 
+}
+
+.navigation ul li a hover{
+    color  crimson 
+    background-color  rgb(228,228,228) 
+    border-radius  5px 
+}
+
+h1 {
+    font-weight  bold 
+    font-size  20 px 
+    text-align  center 
+}
+
+.bienvenida {
+    padding  150px 
+    font-size  60px 
+    font-weight  bold 
+    font-style  oblique 
+    margin-left  50px 
+    text-align  center 
+    color  white 
+    }
+
+.nombre {
+    font-style  italic 
+    text-align  center  
+}
+
+.negrita {
+    font-weight  bold 
+    /* padding  10px  */
+}
+
+div.container-fluid{
+    padding  0 
+}
+
+img.d-block.w-100{
+    height  80vh 
+}
+
+footer {
+    grid-area  footer 
+    display  grid  
+    grid-template-columns  1fr 1fr 1fr  
+    grid-template-rows  1fr 1fr  
+    gap  0px 0px  
+    grid-template-areas  
+        "bloqueS bloqueL bloqueR"
+        "derechos derechos derechos" 
+    background-color  #000 
+    color  white  
+    width  100% 
+    height  30vh 
+}
+
+.bloqueS {
+    padding-top  10px 
+    justify-self  center  
+    align-self  center  
+    grid-area  bloqueS  
+}
+
+.bloqueS a{ 
+    font-size  12px 
+    color #fff 
+    text-decoration  none 
+    display  block 
+}
+
+.bloqueS a hover{
+    text-decoration  underline !important 
+}
+
+.bloqueL {
+    grid-area  bloqueL  
+    background-image  url(../img/logo.png) 
+    background-repeat  no-repeat 
+    background-position  center 
+    background-size  50px 
+}
+
+.bloqueR {
+    grid-area  bloqueR 
+    justify-self  center  
+    align-self  center  
+    display  inline-block 
+    color  #fff 
+    background-size  50px 
+    /* border  2px solid  */
+}
+.bloqueR i{
+    font-size  25px 
+    text-decoration  none 
+    padding-top  10px 
+    height  auto 
+}
+
+.fa-brands{
+    color  white !important 
+}
+
+.bloqueD{
+    grid-area  derechos 
+    text-align  center 
+    justify-self  center  
+    align-self  center  
+    font-size  12px 
+    height  10vh 
+    width  100% 
+    background-color  rgb(32, 32, 32) 
+    padding-top  20px 
+}
+/* Sobre mi */
+
+.contenido {
+    padding-top  50px 
+}
+
+.profesion {
+    grid-area  profesion 
+    padding-top  130px 
+    font-size  40px 
+    font-weight  bold 
+    font-style  oblique 
+    margin-left  50px 
+    text-align  left 
+    justify-content  center 
+}
+
+.profesion span{
+    text-transform  uppercase 
+}
+
+.textoSobremi{
+    margin  50px 
+}
+
+.textoSobremi p{
+    padding  10px 
+}
+
+.foto {
+    grid-area  foto 
+    background-image  url(../img/FotoCV.jpeg) 
+    margin  30px 
+    width  350px 
+    height  350px 
+    background-position center 
+    background-repeat  no-repeat 
+    background-size  cover 
+    float  center 
+    border-radius  900px 
+    display  flex 
+    flex-wrap  wrap 
+}
+
+.profesion {
+    font-weight  bold 
+    font-size  20 px 
+    text-align  center 
+    color  crimson 
+}
+
+/* Servicios */
+
+.intro {
+    grid-area  intro 
+    width  85% 
+    font-weight  bold 
+    font-size  20px 
+    justify-content  center 
+    text-align  left 
+    color black 
+    display  flex 
+    padding  0px 
+}
+
+.diseño {
+    /* display  grid   */
+    padding  40px 
+    width  100% 
+    /* margin-bottom  50px  */
+    justify-self  center  
+    align-self  center  
+}
+
+.diseño h2 {
+    padding-top  50px 
+    font-weight  bold 
+    font-size  30px 
+    text-align  center 
+    color  crimson 
+}
+
+.variantesDiseño { 
+    width  100% 
+    justify-content  left 
+    float  left 
+    grid-area  variantesDiseño  
+    margin-left  10px 
+}
+
+.variantesDiseño p { 
+padding  10px 
+}
+
+.desarrollo { 
+    grid-area  desarrollo 
+    float  right 
+    padding  10px 
+    padding-bottom  30px 
+}
+.fotoServicios {
+    grid-area  fotoServicios 
+    background-image  url(../img/ntbk.jpg) 
+    /* margin-top  10px 
+    margin-right  150px  */
+    width  50% 
+    height  250px 
+    /* background-position  top  */
+    background-repeat  no-repeat 
+    background-size  cover 
+    background-position  center 
+    border-radius  900px 
+    justify-items  center 
+    display  flex 
+    flex-wrap  wrap 
+    padding  50px 
+}
+
+.tituloTrabajos{
+    justify-content  center 
+    text-align  center 
+    font-size  32px 
+    padding-top  80px 
+    color  crimson 
+    display  flex 
+}
+.textoTrabajos{
+    justify-content  center 
+    text-align  left 
+    font-size  16px 
+    padding  15px 
+    margin-top  30px 
+}
+/* fotos */
+.proyectos{
+    font-size  14px 
+    min-height  800px 
+    width  100% 
+    display  grid 
+    padding  30px 
+    gap  10px 
+}
+
+.proy{
+    border-radius  50px 
+    box-shadow  0 0 7px rgb(92, 92, 92)  
+    transition  all 0.3s 
+}
+.proy hover{
+    transform  scale(1.3) 
+    transition  all 0.1s 
+}
+
+.proy1{
+    background-image  url(../img/proy2.jpg) 
+    background-position  center 
+    background-size  250% 
+    background-repeat  no-repeat 
+    background-color  #f6f6f6 
+}
+
+.proy2{
+    background-image  url(../img/proy_h2.jpg) 
+    background-size  cover 
+    background-position  top 
+    background-color  #f6f6f6 
+}
+.proy3{
+    background-image  url(../img/proy_h3.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+}
+
+.proy4{
+    background-image  url(../img/proy_v1.jpeg) 
+    background-size  cover 
+    background-position  top 
+    background-color  #f6f6f6 
+}
+
+.proy5{
+    background-image  url(../img/folleto_c1.png) 
+    background-size  cover 
+    background-position  left 
+    background-color  #f6f6f6 
+    background-color  #f6f6f6 
+}
+.proy6{
+    background-image  url(../img/proyc3.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+}
+.proy7{
+    background-image  url(../img/proyc2.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+}
+.proy8{
+    background-image  url(../img/proy_h1.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+}
+
+.proy1a{
+    background-image  url(../img/Logo_Pituca-Manjé.jpg) 
+    background-position  center 
+    background-size  cover 
+    background-size  110% 
+    background-color  #f6f6f6 
+}
+
+.proy2a{
+    background-image  url(../img/Logo_Dulgerhaus-03.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-size  110% 
+    background-repeat  no-repeat 
+    background-color  #f6f6f6 
+}
+.proy3a{
+    background-image  url(../img/Logo_ElRincon.jpg) 
+    background-size  cover 
+    background-position  right 
+    background-size  140% 
+    background-repeat  no-repeat 
+    background-color  #f6f6f6 
+}
+
+.proy4a{
+    background-image  url(../img/LaWeberia_HuevosOnline.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+.proy5a{
+    background-image  url(../img/Logo_Manantiales.jpeg) 
+    background-size  110% 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-color  rgb(153, 194, 194) 
+    background-size  110% 
+}
+.proy6a{
+    background-image  url(../img/Logo_LaPromesa.jpeg) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+    background-repeat  no-repeat 
+    background-size  100% 
+}
+.proy7a{
+    background-image  url(../img/Logo_Solar.jpeg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  180% 
+    background-color  #f6f6f6 
+}
+.proy8a{
+    background-image  url(../img/Logo_vanguardia.jpeg) 
+    background-size  cover 
+    background-position top 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+
+.proy1b{
+    background-image  url(../img/150654_1650d6f1601a4325b0db250bf551368b_mv2.jpeg) 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+.proy2b{
+    background-image  url(../img/150654_4444b89743834534ac112bae48fb5954_mv2_d_1200_1200_s_2.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+.proy3b{
+    background-image  url(../img/150654_7e299a31aa8b466eb426ee9b078bf6c6.jpeg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+.proy4b{
+    background-image  url(../img/150654_f8159cc5d8494da4a8a233d566c3c579.jpeg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+.proy5b{
+    background-image  url(../img/150654_fc29fe5d856a4b1e8e28d019eb74daa8_mv2.jpeg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  105% 
+    background-color  #f6f6f6 
+}
+.proy6b{
+    background-image  url(../img/mujerpintada.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+.proy7b{
+    background-image  url(../img/proy1.png) 
+    background-size  cover 
+    background-position  center 
+    background-color  #f6f6f6 
+}
+.proy8b{
+    background-image  url(../img/proy_h2.jpg) 
+    background-size  cover 
+    background-position  center 
+    background-repeat  no-repeat 
+    background-size  100% 
+    background-color  #f6f6f6 
+}
+
+@media only screen and (min-width  320px) and (max-width  730px){
+    .navigation ul li{
+        display  block 
+    }
+    .bannerHero {
+        width  100% 
+    }
+    .proy{
+        height  175px 
+    }
+}
+
+@media only screen and (max-width  1050px){
+    .proyectos{
+        grid-template-columns  1fr 1fr 
+    }
+    .proy11{
+        grid-column  1/3 
+        grid-row  7/8 
+    }
+
+    .contenidoInicio{
+        grid-template-columns  1fr 
+    }
+        .textoIzquierda { 
+            grid-column  1/1 
+            grid-row  1/2 
+        }
+        .imagenInicio{
+            grid-column  1/1 
+            grid-row  2/3 
+        }
+}
+
+@media only screen and (min-width 768px) and (max-width  1024px) {
+    .proyectos{
+        grid-template-columns  1fr 1fr 1fr 
+    }
+    .proy1{
+        grid-column  1/3 
+        grid-row  1/2 
+    }
+    .proy2{
+        grid-column  3/4 
+        grid-row  1/2 
+    }
+    .proy3{
+        grid-column  1/2 
+        grid-row  2/3 
+    }
+    .proy4{
+        grid-column  2/3 
+        grid-row  2/4 
+    }
+    .proy5{
+        grid-column  1/3 
+        grid-row  3/4 
+    }
+    .proy6{
+        grid-column  3/4 
+        grid-row  3/4 
+    }
+    .proy7{
+        grid-column  1/2 
+        grid-row  4/5 
+    }
+    .proy8{
+        grid-column  3/4 
+        grid-row  4/5 
+    }
+    .proy9{
+        grid-column  1/3 
+        grid-row  4/5 
+    }
+    .proy10{
+        grid-column  3/4 
+        grid-row  5/6 
+    }
+    .proy11{
+        grid-column  1/3 
+        grid-row  5/6 
+    }
+
+}
+
+@media only screen and (min-width  1024px){
+
+    .proyectos{
+        grid-template-columns  repeat(4, 1fr) 
+    }
+    .proy{
+        height  auto 
+    }
+
+    .proy1{
+        grid-column  1/2 
+        grid-row  1/3 
+    }
+    
+    .proy2{
+        grid-column  2/3 
+        grid-row  1/2 
+    }
+    .proy3{
+        grid-column  3/5 
+        grid-row  1/2 
+    }
+    
+    .proy4{
+        grid-column  2/3 
+        grid-row  2/4 
+    }
+    .proy5{
+        grid-column  3/4 
+        grid-row  2/3 
+    }
+    .proy6{
+        grid-column  4/5 
+        grid-row  2/3 
+    }
+    .proy7{
+        grid-column  1/2 
+        grid-row  3/4 
+    }
+    .proy8{
+        grid-column  3/5 
+        grid-row  3/4 
+    }   
+    .proy9{
+        grid-column  1/3 
+        grid-row  4/5 
+    }
+    .proy10{
+        grid-column  3/4 
+        grid-row  4/5 
+    }
+    .proy11{
+        grid-column  4/5 
+        grid-row  4/5 
+    }
+
+}
+
+/* /fotos */
+
+/* Contacto */
+.escribime {
+    float inline-start  
+    display  flexbox 
+    margin-left  50px 
+    font-weight  bold 
+    font-size  20 px 
+    text-align  left 
+    color  crimson 
+    padding-top  100px 
+}
+
+.campos{
+    justify-content  center 
+    margin-left  50px 
+    padding-bottom  20px 
+    border-style  none 
+}
+/* formulario */
+*{box-sizing border-box }
+
+form{
+	width 600px 
+	padding 16px 
+	border-radius 10px 
+	margin auto 
+	background-color rgb(192, 192, 192) 
+    margin-bottom  20px 
+}
+
+form label{
+	width 300px 
+	font-weight bold 
+	display inline-block 
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width 180px 
+	padding 3px 10px 
+	border 1px solid #f6f6f6 
+	border-radius 3px 
+	background-color #f6f6f6 
+	margin 8px 0 
+	display inline-block 
+}
+
+form input[type="telefono"]{
+	width 180px 
+	padding 3px 10px 
+	border 1px solid #f6f6f6 
+	border-radius 3px 
+	background-color #f6f6f6 
+	margin 8px 0 
+	display inline-block 
+}
+
+form input[type="radio"]{
+	/* padding top  20px  */
+	border 1px solid #f6f6f6 
+	/* border-radius 3px  */
+	background-color #f6f6f6 
+	display inline 
+}
+
+form input[type="checkbox"]{
+	/* width  600px  */
+	/* padding top  20px  */
+	border 1px solid #f6f6f6 
+	background-color #f6f6f6 
+	display inline 
+}
+
+form input[type="submit"]{
+	width 40% 
+	padding 8px 16px 
+	margin-top 32px 
+	border 1px solid crimson 
+	border-radius 5px 
+	display block 
+	color #fff 
+    background-color  crimson 
+    float right 
+} 
+
+form input[type="reset"]{
+	width 40% 
+	padding 8px 16px 
+	margin-top 32px 
+	border 1px solid #000 
+	border-radius 5px 
+	display block 
+	color #fff 
+	background-color #000 
+    float left 
+} 
+
+form input[type="submit"] hover{
+	cursor pointer 
+}
+
+.motivo1{
+    text-decoration  underline 
+    padding-bottom  5px 
+}
+
+.mensaje1{
+    padding-top  10px 
+    padding-bottom  10px 
+}
+
+.condiciones{
+    padding-top  10px 
+    padding-bottom  10px 
+}
+
+textarea{
+	width 100% 
+	height 100px 
+	border 1px solid #f6f6f6 
+	border-radius 3px 
+	background-color #f6f6f6 			
+	margin 8px 0 
+	/*resize  vertical | horizontal | none | both*/
+	resize none 
+	display block 
+}
+
